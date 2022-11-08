@@ -4,6 +4,7 @@ from ks_constants.devs import Developer
 from ks_constants.maps import Map
 from ks_constants.roles import Role, RoleType, Team
 from ks_constants.locale import Language
+from ks_constants.regions import Region
 
 class TestStringMethods(unittest.TestCase):
 
@@ -11,7 +12,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(Map.Aiur_Fountains.original_author(), Developer.Luminous)
         self.assertEqual(Map.Ruins_Of_Imladoon.original_author(), Developer.Fatline)
         self.assertEqual(Map.Ruins_Of_Imladoon.current_author(), Developer.Templar)
-        self.assertFalse(Map.Vintage_Shores.is_map_available())
+        self.assertFalse(Map.Vintage_Shores.is_available())
         self.assertEqual(Map.Classic.get_name(Language.English), Map.Classic.get_english_name())
         self.assertEqual(Map.from_index(0), Map.Classic)
 
@@ -28,6 +29,10 @@ class TestStringMethods(unittest.TestCase):
 
     def test_teams(self):
         self.assertEqual(Team.Kerrigan, 1)
+
+    def test_regions(self):
+        self.assertNotEqual(Region.North_America.get_english_code(), Region.North_America.get_auth_code())
+        self.assertEqual(Region.Europe.get_english_code(), Region.Europe.get_auth_code())
 
 if __name__ == '__main__':
     unittest.main()
