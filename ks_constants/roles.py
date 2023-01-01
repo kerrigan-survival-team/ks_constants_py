@@ -3,6 +3,9 @@ from ks_constants.devs import Developer
 from ks_constants.locale import Language
 
 
+from enum import Enum, EnumMeta
+
+
 class Team(Enum):
     Survivor = (0, 8)
     Kerrigan = (1, 2)
@@ -101,6 +104,13 @@ class Role(Enum):
     @classmethod
     def from_index(cls, index):
         return _roles_list[index]
+
+    @classmethod
+    def from_name(cls, name):
+        for role in Role:
+            if role.name == name:
+                return role
+        return None
 
     def get_index(self):
         return self._index
