@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 setup(
     name='KS_Constants',
-    version="1.2.69",  # Make sure there are no spaces around =
+    version="1.2.71",  # Make sure there are no spaces around =
     license='MIT',
     author="Steven Su",
     author_email='ks2devteam@gmail.com',
