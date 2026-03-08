@@ -17,7 +17,7 @@ class Map(Enum):
                [os.path.join("Base.SC2Data", "GameData", "Terrain", "Classic.xml")],
                os.path.join(KS2_MAPS_DIRECTORY, "classic.SC2Map"),
                False,
-               True,
+               False,
                False,
                Developer.Luminous)
     Duck_Map = (1,
@@ -31,7 +31,7 @@ class Map(Enum):
                 [os.path.join("Base.SC2Data", "GameData", "Terrain", "DuckMap.xml")],
                 os.path.join(KS2_MAPS_DIRECTORY, "duck_map.SC2Map"),
                 False,
-                True,
+                False,
                 False,
                 None)
     Zerus_Volcanoes = (2,
@@ -45,7 +45,7 @@ class Map(Enum):
                        [os.path.join("Base.SC2Data", "GameData", "Terrain", "ZerusVolcanoes.xml")],
                        os.path.join(KS2_MAPS_DIRECTORY, "zerus_volcanoes.SC2Map"),
                        False,
-                       True,
+                       False,
                        False,
                        None)
     Ruins_Of_Imladoon = (3,
@@ -86,7 +86,7 @@ class Map(Enum):
                          [os.path.join("Base.SC2Data", "GameData", "Terrain", "HeartOfAmethyst.xml")],
                          os.path.join(KS2_MAPS_DIRECTORY, "heart_of_amethyst.SC2Map"),
                          False,
-                         True,
+                         False,
                          False,
                          None)
     Vintage_Shores = (6,
@@ -228,7 +228,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "SandFort.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "sand_fort.SC2Map"),
                      True,
-                     False,
+                     True,
                      False,
                      Developer.Luminous)
     Mar_Sara_Wastelands = (16,
@@ -256,7 +256,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "LastSanctuary.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "last_sanctuary.SC2Map"),
                      True,
-                     False,
+                     True,
                      False,
                      Developer.Feanor)
     No_Hope = (18,
