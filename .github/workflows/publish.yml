@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Version to publish (e.g. 1.2.68)'
+        description: 'Version to publish (e.g. 1.2.76)'
         required: true
         type: string
 
@@ -28,16 +28,16 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install --upgrade setuptools wheel build bump2version
+          pip install --upgrade setuptools wheel build
+
+      - name: Update version
+        run: |
+          sed -i 's/version="[^"]*"/version="${{ inputs.version }}"/' setup.py
 
       - name: Configure Git
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-
-      - name: Update version
-        run: |
-          bump2version --new-version ${{ inputs.version }} --allow-dirty patch --no-tag
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
@@ -48,13 +48,10 @@ jobs:
           body: 'Automated release of version ${{ inputs.version }}.'
           labels: 'automated release'
 
-      # The following steps will be executed after the PR is merged
       - name: Build package
-        if: github.event_name == 'workflow_dispatch'
         run: |
           rm -rf build/ dist/
           python -m build
 
       - name: Publish package to PyPI
-        if: github.event_name == 'workflow_dispatch'
         uses: pypa/gh-action-pypi-publish@release/v1
