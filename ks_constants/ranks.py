@@ -8,6 +8,7 @@ class Rank(Enum):
     Platinum = (75, 95)
     Diamond = (95, 99)
     Master = (99, 100)
+    Grandmaster = (100,100)
 
     def __init__(self,
                  lower_percentile: int,
