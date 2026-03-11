@@ -36,6 +36,8 @@ class TestStringMethods(unittest.TestCase):
 
     def test_ranks(self):
         self.assertGreater(Rank.Bronze.upper_percentile(), 0)
+        self.assertFalse(Rank.Grandmaster.uses_percentile())
+        self.assertTrue(Rank.Platinum.uses_percentile())
 
     def test_regions(self):
         self.assertEqual(Region.from_index(1), Region.North_America)
