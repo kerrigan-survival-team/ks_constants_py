@@ -21,3 +21,4 @@ class Developer(Enum):
     SmugWyrmling = 16
     Fern = 17
     TheePotatoLord =18
+    _1nfinite = 19
