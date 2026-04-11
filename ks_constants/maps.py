@@ -288,7 +288,37 @@ class Map(Enum):
                      False,
                      False,
                      Developer.SmugWyrmling)
-                                        
+    
+    Greenland = (20,
+                     {
+                         Language.Chinese: '',
+                         Language.English: "Greenland",
+                         Language.Korean: ""
+                     },
+                     "GREENLAND",
+                     None,
+                     [os.path.join("Base.SC2Data", "GameData", "Terrain", "Greenland.xml")],
+                     os.path.join(KS2_MAPS_DIRECTORY, "greenland.SC2Map"),
+                     False,
+                     True,
+                     False,
+                     Developer.Infinite)
+    
+    The_Island = (21,
+                     {
+                         Language.Chinese: '',
+                         Language.English: "The Island",
+                         Language.Korean: ""
+                     },
+                     "THE_ISLAND",
+                     None,
+                     [os.path.join("Base.SC2Data", "GameData", "Terrain", "The_Island.xml")],
+                     os.path.join(KS2_MAPS_DIRECTORY, "the_island.SC2Map"),
+                     False,
+                     False,
+                     False,
+                     Developer.Infinite)  
+    
     # galaxy representation is the string value of the Preset in KS2 Galaxy
     def __init__(self,
                  index: int,
