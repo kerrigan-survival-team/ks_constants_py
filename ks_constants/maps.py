@@ -30,7 +30,7 @@ class Map(Enum):
                 Developer.Duck,
                 [os.path.join("Base.SC2Data", "GameData", "Terrain", "DuckMap.xml")],
                 os.path.join(KS2_MAPS_DIRECTORY, "duck_map.SC2Map"),
-                True,
+                False,
                 True,
                 False,
                 None)
