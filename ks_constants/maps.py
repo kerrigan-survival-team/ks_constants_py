@@ -72,7 +72,7 @@ class Map(Enum):
                     Developer.Luminous,
                     [os.path.join("Base.SC2Data", "GameData", "Terrain", "FourSeasons.xml")],
                     os.path.join(KS2_MAPS_DIRECTORY, "four_seasons.SC2Map"),
-                    True,
+                    False,
                     True,
                     False,
                     None)
@@ -114,7 +114,7 @@ class Map(Enum):
                       [os.path.join("Base.SC2Data", "GameData", "Terrain", "AiurFountains.xml")],
                       os.path.join(KS2_MAPS_DIRECTORY, "aiur_fountains.SC2Map"),
                       True,
-                      False,
+                      True,
                       False,
                       None)
     Kaldir_Cliffs = (8,
@@ -156,7 +156,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "DeathValley.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "death_valley.SC2Map"),
                      True,
-                     False,
+                     True,
                      True,
                      None)                     
     Snow_Prism = (11,
@@ -170,7 +170,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "SnowPrism.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "snow_prism.SC2Map"),
                      True,
-                     False,
+                     True,
                      False,
                      Developer.Luminous)
 
@@ -228,7 +228,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "SandFort.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "sand_fort.SC2Map"),
                      True,
-                     True,
+                     False,
                      False,
                      Developer.Luminous)
     Mar_Sara_Wastelands = (16,
@@ -242,7 +242,7 @@ class Map(Enum):
                      [],
                      os.path.join(KS2_MAPS_DIRECTORY, "mar_sara_wastelands.SC2Map"),
                      True,
-                     False,
+                     True,
                      False,
                      Developer.Luminous)
     Last_Sanctuary = (17,
@@ -285,7 +285,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "CelestialSkylines.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "celestial_skylines.SC2Map"),
                      False,
-                     False,
+                     True,
                      False,
                      Developer.SmugWyrmling)
     
@@ -315,7 +315,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "The_Island.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "the_island.SC2Map"),
                      False,
-                     False,
+                     True,
                      False,
                      Developer.Infinite)  
     
