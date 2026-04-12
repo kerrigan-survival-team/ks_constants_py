@@ -94,7 +94,7 @@ class Role(Enum):
     Sophia = (45, RoleType.Builder, {Language.English: 'Sophia'}, Developer.Korneel, Developer.TheePotatoLord, True)
     Jinara = (46, RoleType.Builder, {Language.English: 'Jinara'}, Developer.Fern, None, True)
     Sir_Roachington = (47, RoleType.Defender, {Language.English: 'Sir Roachington'}, Developer.TheePotatoLord, None, True)
-    Administrator = (48, RoleType.Builder, {Language.English: 'Administrator'}, Developer.Fern, None, True)
+    Skitter = (48, RoleType.Builder, {Language.English: 'Administrator'}, Developer.Fern, None, True)
     Raszagal = (49, RoleType.Builder, {Language.English: 'Raszagal'}, Developer.Understudy, None, False)
 
     def __init__(self,
