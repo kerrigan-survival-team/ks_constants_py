@@ -300,7 +300,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "Greenland.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "greenland.SC2Map"),
                      False,
-                     True,
+                     False,
                      False,
                      Developer.Infinite)
     
