@@ -48,7 +48,7 @@ class RoleType(Enum):
 class Role(Enum):
     Kerrigan = (0, RoleType.Hunter, {Language.Chinese: '凯瑞甘', Language.English: 'Kerrigan', Language.Korean: '케리건'}, Developer.Geo, Developer.Starduck, True)
     Scientist = (1, RoleType.Builder, {Language.Chinese: '科学家', Language.English: 'Scientist', Language.Korean: '과학자'}, Developer.Geo, Developer.Starduck, True)
-    Dark_Templar = (2, RoleType.Builder, {Language.Chinese: '黑暗圣堂武士', Language.English: 'Dark Templar', Language.Korean: '암흑기사'}, Developer.Geo, Developer.Starduck, True)
+    Dark_Templar = (2, RoleType.Support, {Language.Chinese: '黑暗圣堂武士', Language.English: 'Dark Templar', Language.Korean: '암흑기사'}, Developer.Geo, Developer.Starduck, True)
     Ascendant = (3, RoleType.Builder, {Language.Chinese: '晋升者', Language.English: 'Ascendant', Language.Korean: '승천자'}, Developer.Luminous, Developer.Starduck, True)
     Spirit = (4, RoleType.Builder, {Language.Chinese: '灵魂', Language.English: 'Spirit', Language.Korean: '혼령'}, Developer.Luminous, Developer.Starduck, True)
     Ares = (5, RoleType.Builder, {Language.Chinese: '阿瑞斯', Language.English: 'Ares', Language.Korean: '아레스'}, Developer.Luminous, Developer.Starduck, True)
