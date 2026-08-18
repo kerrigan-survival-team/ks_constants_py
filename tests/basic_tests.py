@@ -20,7 +20,7 @@ class TestStringMethods(unittest.TestCase):
     def test_roles(self):
         self.assertEqual(Role.Ares.get_current_author(), Role.Aewyn.get_current_author())
         self.assertEqual(Role.Ascendant.get_role_type(), RoleType.Builder)
-        self.assertEqual(Role.Dark_Templar.get_role_type(), RoleType.Builder)
+        self.assertEqual(Role.Dark_Templar.get_role_type(), RoleType.Support)
         self.assertEqual(Role.Brakk.get_role_type(), RoleType.Hunter)
         self.assertEqual(Role.from_index(5), Role.Ares)
         self.assertEqual(Role.Brakk.get_team(), Team.Kerrigan)
