@@ -17,7 +17,7 @@ class Map(Enum):
                [os.path.join("Base.SC2Data", "GameData", "Terrain", "Classic.xml")],
                os.path.join(KS2_MAPS_DIRECTORY, "classic.SC2Map"),
                False,
-               False,
+               True,
                False,
                Developer.Luminous)
     Duck_Map = (1,
@@ -114,7 +114,7 @@ class Map(Enum):
                       [os.path.join("Base.SC2Data", "GameData", "Terrain", "AiurFountains.xml")],
                       os.path.join(KS2_MAPS_DIRECTORY, "aiur_fountains.SC2Map"),
                       True,
-                      True,
+                      False,
                       False,
                       None)
     Kaldir_Cliffs = (8,
@@ -156,7 +156,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "DeathValley.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "death_valley.SC2Map"),
                      True,
-                     True,
+                     False,
                      True,
                      None)                     
     Snow_Prism = (11,
@@ -170,7 +170,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "SnowPrism.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "snow_prism.SC2Map"),
                      True,
-                     True,
+                     False,
                      False,
                      Developer.Luminous)
 
@@ -185,7 +185,7 @@ class Map(Enum):
                      [],
                      os.path.join(KS2_MAPS_DIRECTORY, "adun_temple.SC2Map"),
                      True,
-                     False,
+                     True,
                      False,
                      Developer.Luminous)
 
@@ -256,7 +256,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "LastSanctuary.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "last_sanctuary.SC2Map"),
                      True,
-                     True,
+                     False,
                      False,
                      Developer.Feanor)
     No_Hope = (18,
@@ -270,7 +270,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "NoHope.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "no_hope.SC2Map"),
                      False,
-                     False,
+                     True,
                      False,
                      Developer.SmugWyrmling)
                      
@@ -285,7 +285,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "CelestialSkylines.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "celestial_skylines.SC2Map"),
                      False,
-                     True,
+                     False,
                      False,
                      Developer.SmugWyrmling)
     
