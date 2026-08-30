@@ -97,6 +97,7 @@ class Role(Enum):
     Skitter = (48, RoleType.Builder, {Language.English: 'Skitter'}, Developer.Fern, None, True)
     Visionary = (49, RoleType.Builder, {Language.English: 'Visionary'}, Developer.Willdroyd, None, False)
     Raszagal = (50, RoleType.Builder, {Language.English: 'Raszagal'}, Developer.Understudy, None, False)
+    Horner = (51, RoleType.Support, {Language.English: 'Horner'}, Developer.H5x9p, None, True)
 
     def __init__(self,
                  _id: int,
