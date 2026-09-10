@@ -156,7 +156,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "DeathValley.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "death_valley.SC2Map"),
                      True,
-                     False,
+                     True,
                      True,
                      None)                     
     Snow_Prism = (11,
