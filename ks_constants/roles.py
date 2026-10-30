@@ -78,10 +78,10 @@ class Role(Enum):
     Delta_Squad = (29, RoleType.Support, {Language.Chinese: '三角洲小队', Language.English: 'Delta Squad', Language.Korean: '델타 특공대'}, Developer.Luminous, Developer.Starduck, True)
     Phaegore = (30, RoleType.Defender, {Language.Chinese: '菲戈尔', Language.English: 'Phaegore', Language.Korean: '파에고르'}, Developer.Templar, Developer.Andrene, True)
     Alarak = (31, RoleType.Builder, {Language.Chinese: '阿拉纳克', Language.English: 'Alarak', Language.Korean: '알라라크'}, Developer.Luminous, Developer.Starduck, True)
-    Izsha = (32, RoleType.Defender, {Language.Chinese: '伊兹莎', Language.English: 'Izsha', Language.Korean: '이즈샤'}, Developer.Susu, Developer.H5x9p, True)
+    Izsha = (32, RoleType.Defender, {Language.Chinese: '伊兹莎', Language.English: 'Izsha', Language.Korean: '이즈샤'}, Developer.Susu, Developer.H5x9p, False)
     Malus = (33, RoleType.Hunter, {Language.Chinese: '马吕斯', Language.English: 'Malus', Language.Korean: '말러스'}, Developer.Susu, Developer.H5x9p, True)
     Kraith = (34, RoleType.Hunter, {Language.Chinese: '克雷斯', Language.English: 'Kraith', Language.Korean: '크레이스'}, Developer.Templar, Developer.Willdroyd, True)
-    Energizer = (35, RoleType.Builder, {Language.Chinese: '激励者', Language.English: 'Energizer', Language.Korean: '에너자이저'}, Developer.Fatline, Developer.Sox, True)
+    Energizer = (35, RoleType.Builder, {Language.Chinese: '激励者', Language.English: 'Energizer', Language.Korean: '에너자이저'}, Developer.Fatline, Developer.Fatline, True)
     Andor = (36, RoleType.Builder, {Language.Chinese: '亚顿', Language.English: 'Andor', Language.Korean: '안도르'}, Developer.Korneel, None, True)
     DJ = (37, RoleType.Builder, {Language.Chinese: '', Language.English: 'DJ', Language.Korean: '디제이'}, Developer.Sox, None, True)
     Rattlesnake = (38, RoleType.Support, {Language.Chinese: '凯文', Language.English: 'Rattlesnake', Language.Korean: '방울뱀'}, Developer.Legacy, Developer.Andrene, True)
@@ -95,9 +95,11 @@ class Role(Enum):
     Jinara = (46, RoleType.Builder, {Language.English: 'Jinara'}, Developer.Fern, None, True)
     Sir_Roachington = (47, RoleType.Defender, {Language.English: 'Sir Roachington'}, Developer.TheePotatoLord, None, True)
     Skitter = (48, RoleType.Builder, {Language.English: 'Skitter'}, Developer.Fern, None, True)
-    Visionary = (49, RoleType.Builder, {Language.English: 'Visionary'}, Developer.Willdroyd, None, False)
+    Visionary = (49, RoleType.Builder, {Language.English: 'Visionary'}, Developer.Willdroyd, None, True)
     Raszagal = (50, RoleType.Builder, {Language.English: 'Raszagal'}, Developer.Understudy, None, False)
-    Horner = (51, RoleType.Support, {Language.English: 'Horner'}, Developer.H5x9p, None, True)
+    Horner = (51, RoleType.Support, {Language.English: 'Horner'}, Developer.H5x9p, None, False)
+    Junker = (52, RoleType.Builder, {Language.English: 'Junker'}, Developer.Pajk, None, False)
+
 
     def __init__(self,
                  _id: int,

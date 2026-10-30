@@ -28,3 +28,4 @@ class Developer(Enum):
     Starduck = 23
     Hellzstormer = 24
     Andrene = 25
+    Pajk = 26
